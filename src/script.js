@@ -1,31 +1,28 @@
-const navbar = document.getElementById('navbar');
-
 // Mobile navbar hamburger trigger
 
+const navbar = document.getElementById('navbar');
 export function hamburgerTrigger() {
   navbar.classList.toggle('show-nav-links');
 }
-
-// const navLinksWidth = navbar.clientWidth - document.getElementById('cds-logo-desktop-container').clientWidth;
 
 // Creating nav links
 
 const navItems = [
   {
-    name: 'Live updates',
-    link: '/',
+    name: 'News updates',
+    link: 'https://www.columbiaspectator.com/news/2020/03/15/coronavirus-updates-columbia-and-barnard-move-to-online-classes-for-remainder-of-spring-semester',
   },
   {
     name: 'Housing and accommodations',
-    link: '',
+    link: 'https://www.columbiaspectator.com/news/2020/03/15/how-to-navigate-housing-and-university-accommodations/',
   },
   {
     name: 'Academic resources',
-    link: '',
+    link: 'https://www.columbiaspectator.com/news/2020/03/15/navigating-a-virtual-academic-landscape/',
   },
   {
     name: 'Staying on campus',
-    link: '',
+    link: 'https://www.columbiaspectator.com/news/2020/03/15/what-you-need-to-know-if-you-remain-on-campus/',
   },
 ];
 
@@ -37,9 +34,11 @@ navItems.forEach(({ name, link}) => {
   div.classList.add('nav-link');
   if (link.includes(pathname))
     div.classList.add('nav-link-highlighted');
+
   const a = document.createElement('a');
   a.setAttribute('href', link);
   a.innerText = name;
+
   div.append(a);
   navLinks.append(div);
 });

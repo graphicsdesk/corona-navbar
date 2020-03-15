@@ -3,9 +3,6 @@ $navbar-height: 48px;
 
 $fade-transition-duration: 0.25s;
 
-body { margin: 0; }
-
-$graphik: Graphik, arial, helvetica, sans-serif;
 @font-face {
   font-family: Graphik;
   src: url('https://spectator-fonts.s3.amazonaws.com/Graphik-400-Regular.otf') format('opentype');
@@ -24,6 +21,12 @@ $graphik: Graphik, arial, helvetica, sans-serif;
   font-weight: 700;
 }
 
+$graphik: Graphik, arial, helvetica, sans-serif;
+
+body {
+  margin: 0;
+}
+
 #navbar {
   display: flex;
   width: 100%;
@@ -34,7 +37,6 @@ $graphik: Graphik, arial, helvetica, sans-serif;
   transition-duration: .2s;
   box-shadow: $navbar-shadow;
 }
-
 
 .logo-container {
   display: flex;
@@ -56,7 +58,6 @@ $graphik: Graphik, arial, helvetica, sans-serif;
       color: #121212;
       font-weight: 600;
       text-decoration: none;
-      // height: 100%;
     }
     a:hover {
       text-decoration: none;
@@ -84,7 +85,7 @@ $graphik: Graphik, arial, helvetica, sans-serif;
   padding: 0;
   margin-right: 20px;
   display: none;
-  // transition-duration: $fade-transition-duration;
+  transition-duration: $fade-transition-duration;
   background: none;
 }
 
@@ -124,10 +125,6 @@ $graphik: Graphik, arial, helvetica, sans-serif;
 
     &.nav-link-highlighted {      
       border-bottom: 3px solid #121212;
-    }
-
-    &:first-child {
-      // margin-left: 20px;
     }
   }
 
@@ -237,9 +234,6 @@ $graphik: Graphik, arial, helvetica, sans-serif;
       padding-right: 0;
       border-left: 1px solid #121212;
       border-right: none;
-      a {
-        // font-weight: 400;        
-      }
     }
   }
 
