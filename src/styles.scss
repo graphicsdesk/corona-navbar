@@ -151,8 +151,23 @@ $graphik: Graphik, arial, helvetica, sans-serif;
   }
 }
 
+// TODO: this media container should be able to dynamically change max width
+#line-break {
+  display: none;
+}
+
+@media (max-width: 980px) {
+  #line-break {
+    display: block;
+  }
+}
+
 // Collapse navbar
 @media (max-width: 760px) {
+  #line-break {
+    display: none;
+  }
+
   #navbar {
     flex-direction: column;
   }
@@ -251,16 +266,5 @@ $graphik: Graphik, arial, helvetica, sans-serif;
 @media (max-width: 880px) {
   #cds-logo-desktop-container {
     display: none;
-  }
-}
-
-
-// TODO: this media container should be able to dynamically change max width
-#line-break {
-  display: none;
-}
-@media (max-width: 980px) {
-  #line-break {
-    display: block;
   }
 }
