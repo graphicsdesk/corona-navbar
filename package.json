@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "parcel src/index.html --global script",
-    "build": "parcel build src/index.html --global script --public-url ."
+    "build": "parcel build src/index.html --global script --public-url https://spectator-static-assets.s3.amazonaws.com/corona-navbar --no-content-hash"
   },
   "repository": {
     "type": "git",

@@ -268,3 +268,18 @@ $graphik: Graphik, arial, helvetica, sans-serif;
     display: none;
   }
 }
+
+// ELLIPSIS STUFF
+
+section#top {
+  display: none;
+}
+
+section#main {
+  padding-top: 50px;
+}
+
+.ab-article-content #navbar {
+  top: 0;
+  left: 0;
+}
