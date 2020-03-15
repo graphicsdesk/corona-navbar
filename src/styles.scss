@@ -51,7 +51,8 @@ $graphik: Graphik, arial, helvetica, sans-serif;
 
     a {
       font-family: $graphik;
-      font-size: 16px;
+      font-size: 14px;
+      line-height: 17px;
       color: #121212;
       font-weight: 600;
       text-decoration: none;
@@ -63,13 +64,13 @@ $graphik: Graphik, arial, helvetica, sans-serif;
   }
 
   a.cds-logo-container {
-    margin-left: 10px;
+    margin-left: 20px;
     visibility: hidden;
   }
 }
 
 #cds-logo {
-  width: 15px;
+  width: 0;
   height: 100%;
   object-fit: contain;
 }
@@ -114,7 +115,7 @@ $graphik: Graphik, arial, helvetica, sans-serif;
   transition-duration: $fade-transition-duration;
 
   div.nav-link {
-    margin: 0 0 0 26px;
+    margin: 0 0 0 20px;
     height: 100%;
     box-sizing: border-box;
     border-top: 3px solid transparent;
@@ -137,7 +138,7 @@ $graphik: Graphik, arial, helvetica, sans-serif;
   a {
     margin: 0;
     font-family: $graphik;
-    font-size: 14px;
+    font-size: 13px;
     color: #121212;
     text-decoration: none;
     display: flex;
@@ -229,6 +230,7 @@ $graphik: Graphik, arial, helvetica, sans-serif;
 
   .hamburger-btn {
     display: block;
+    margin-left: auto;
   }
 
   #cds-logo-desktop-container {
@@ -237,7 +239,7 @@ $graphik: Graphik, arial, helvetica, sans-serif;
 }
 
 #cds-logo-desktop-container {
-  margin-right: 50px;
+  margin-right: 20px;
 
   img {
     height: 100%;
@@ -249,5 +251,16 @@ $graphik: Graphik, arial, helvetica, sans-serif;
 @media (max-width: 880px) {
   #cds-logo-desktop-container {
     display: none;
+  }
+}
+
+
+// TODO: this media container should be able to dynamically change max width
+#line-break {
+  display: none;
+}
+@media (max-width: 980px) {
+  #line-break {
+    display: block;
   }
 }

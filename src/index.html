@@ -9,7 +9,7 @@
     </a>
 
     <div class="navbar-title">
-      <a href="#">Coronavirus Outbreak</a>
+      <a href="#">Coronavirus <br id="line-break"> Outbreak</a>
     </div>
 
     <button onclick="script.hamburgerTrigger()" class="hamburger-btn">
@@ -18,7 +18,7 @@
   </div>
 
   <div id="nav-links">
-    <each loop="item in [ 'Live updates', 'University resources', 'Staying on campus' ]">
+    <each loop="item in 'Live updates, Housing and accommodations, Academic resources, Staying on campus'.split(', ')">
       <div class="nav-link">
         <a href="{{ item }}">{{ item }}</a>
       </div>
