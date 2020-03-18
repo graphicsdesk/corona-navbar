@@ -23,7 +23,7 @@ function createNavLinks() {
   const navItems = [
     {
       name: 'News updates',
-      link: 'https://www.columbiaspectator.com/news/2020/03/15/coronavirus-updates-columbia-and-barnard-move-to-online-classes-for-remainder-of-spring-semester',
+      link: 'https://www.columbiaspectator.com/news/2020/03/15/coronavirus-updates-columbia-and-barnard-move-to-online-classes-for-remainder-of-spring-semester/',
     },
     {
       name: 'Housing and accommodations',
