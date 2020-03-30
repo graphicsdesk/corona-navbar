@@ -153,14 +153,20 @@ body {
   display: none;
 }
 
-@media (max-width: 980px) {
+@media (max-width: 1090px) {
+  #cds-logo-desktop-container {
+    display: none;
+  }
+}
+
+@media (max-width: 960px) {
   #line-break {
     display: block;
   }
 }
 
 // Collapse navbar
-@media (max-width: 760px) {
+@media (max-width: 860px) {
   #line-break {
     display: none;
   }
@@ -254,12 +260,6 @@ body {
     height: 100%;
     width: 147px;
     object-fit: contain;
-  }
-}
-
-@media (max-width: 880px) {
-  #cds-logo-desktop-container {
-    display: none;
   }
 }
 

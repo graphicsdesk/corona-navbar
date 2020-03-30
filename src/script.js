@@ -26,7 +26,7 @@ function createNavLinks() {
       link: 'https://www.columbiaspectator.com/news/2020/03/15/coronavirus-updates-columbia-and-barnard-move-to-online-classes-for-remainder-of-spring-semester/',
     },
     {
-      name: 'Housing and accommodations',
+      name: 'Housing & accommodations',
       link: 'https://www.columbiaspectator.com/news/2020/03/15/how-to-navigate-housing-and-university-accommodations/',
     },
     {
@@ -36,6 +36,10 @@ function createNavLinks() {
     {
       name: 'Staying on campus',
       link: 'https://www.columbiaspectator.com/news/2020/03/15/what-you-need-to-know-if-you-remain-on-campus/',
+    },
+    {
+      name: 'The view from here',
+      link: 'https://www.columbiaspectator.com/the-eye/2020/03/26/letter-from-the-editor-issue-4/',
     },
   ];
 
